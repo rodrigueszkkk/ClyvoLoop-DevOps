@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\PetHealthEcosystem.Api\\PetHealthEcosystem.Api.csproj": {}
+    "C:\\Users\\kaiky\\Downloads\\PetHealth-main\\PetHealth-main\\PetHealthEcosystem.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\PetHealthEcosystem.Api\\PetHealthEcosystem.Api.csproj": {
+    "C:\\Users\\kaiky\\Downloads\\PetHealth-main\\PetHealth-main\\PetHealthEcosystem.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\PetHealthEcosystem.Api\\PetHealthEcosystem.Api.csproj",
+        "projectUniqueName": "C:\\Users\\kaiky\\Downloads\\PetHealth-main\\PetHealth-main\\PetHealthEcosystem.Api.csproj",
         "projectName": "PetHealthEcosystem.Api",
-        "projectPath": "C:\\Users\\gabri\\PetHealthEcosystem.Api\\PetHealthEcosystem.Api.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\PetHealthEcosystem.Api\\obj\\",
+        "projectPath": "C:\\Users\\kaiky\\Downloads\\PetHealth-main\\PetHealth-main\\PetHealthEcosystem.Api.csproj",
+        "packagesPath": "C:\\Users\\kaiky\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaiky\\Downloads\\PetHealth-main\\PetHealth-main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kaiky\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -52,19 +52,19 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[9.0.0, )"
             },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[9.23.60, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[*, )"
+              "version": "[7.3.1, )"
             }
           },
           "imports": [

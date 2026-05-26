@@ -16,7 +16,7 @@ namespace PetHealthEcosystem.Api.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.8")
+                .HasAnnotation("ProductVersion", "9.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             OracleModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -42,8 +42,8 @@ namespace PetHealthEcosystem.Api.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("NVARCHAR2(100)");
 
-                    b.Property<bool>("NeedsPostOpCare")
-                        .HasColumnType("BOOLEAN");
+                    b.Property<int>("NeedsPostOpCare")
+                        .HasColumnType("NUMBER(10)");
 
                     b.Property<string>("TutorName")
                         .IsRequired()
