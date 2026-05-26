@@ -1,8 +1,7 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 COPY ["PetHealthEcosystem.Api.csproj", "./"]
-
 RUN dotnet restore "PetHealthEcosystem.Api.csproj"
 
 COPY . .
@@ -12,14 +11,13 @@ RUN dotnet publish "PetHealthEcosystem.Api.csproj" \
     -o /app/publish \
     --no-restore
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
 RUN addgroup --system appgroup && \
     adduser --system --ingroup appgroup appuser
 
 COPY --from=build /app/publish .
-
 RUN chown -R appuser:appgroup /app
 
 USER appuser
