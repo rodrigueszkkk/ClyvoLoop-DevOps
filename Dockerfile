@@ -14,7 +14,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
 RUN groupadd --system appgroup && \
-    useradd --system --no-create-home --gid appgroup appuser
+    useradd --system --create-home --gid appgroup appuser
 
 COPY --from=build /app/publish .
 RUN chown -R appuser:appgroup /app
@@ -22,6 +22,8 @@ RUN chown -R appuser:appgroup /app
 USER appuser
 
 EXPOSE 8080
+
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 
 ENV ASPNETCORE_ENVIRONMENT=Production
 ENV ASPNETCORE_URLS=http://0.0.0.0:8080
