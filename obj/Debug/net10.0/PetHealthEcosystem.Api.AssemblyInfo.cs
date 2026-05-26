@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetHealthEcosystem.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54b78dd5ad50eb67d782a9afa2ca444b087bde1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e773b548ac236c34e1347b63a1e3d9d34af11482")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetHealthEcosystem.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetHealthEcosystem.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
