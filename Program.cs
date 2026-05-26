@@ -13,7 +13,15 @@ builder.Services.AddSwaggerGen(c =>
 {
     var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    c.IncludeXmlComments(xmlPath);
+
+    if (File.Exists(xmlPath))
+    {
+        c.IncludeXmlComments(xmlPath);
+    }
+    else
+    {
+        Console.WriteLine($"Aviso: Arquivo XML do Swagger não encontrado em {xmlPath}");
+    }
 });
 
 var app = builder.Build();
@@ -28,4 +36,5 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.MapControllers();
+app.MapGet("/", () => Results.Redirect("/swagger"));
 app.Run();
