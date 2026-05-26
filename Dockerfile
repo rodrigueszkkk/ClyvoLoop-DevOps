@@ -14,8 +14,8 @@ RUN dotnet publish "PetHealthEcosystem.Api.csproj" \
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
-RUN addgroup --system appgroup && \
-    adduser --system --ingroup appgroup appuser
+RUN groupadd --system appgroup && \
+    useradd --system --no-create-home --gid appgroup appuser
 
 COPY --from=build /app/publish .
 RUN chown -R appuser:appgroup /app
